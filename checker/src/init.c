@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/28 12:50:38 by ctaleb            #+#    #+#             */
-/*   Updated: 2021/10/07 14:32:08 by ctaleb           ###   ########lyon.fr   */
+/*   Created: 2021/06/13 12:00:49 by ctaleb            #+#    #+#             */
+/*   Updated: 2021/10/07 14:33:20 by ctaleb           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 t_stack	stack_init(void)
 {
