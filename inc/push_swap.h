@@ -6,7 +6,7 @@
 /*   By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 09:34:46 by ctaleb            #+#    #+#             */
-/*   Updated: 2021/06/14 13:39:56 by ctaleb           ###   ########lyon.fr   */
+/*   Updated: 2021/10/07 11:24:52 by ctaleb           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ void			error(int id, t_stack *stack_a, t_stack *stack_b);
 void			mem_check(void *ptr, t_stack *stack_a, t_stack *stack_b);
 
 	//parsing
+int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
 void			parser(int ac, char **av, t_stack *stack_a, t_stack *stack_b);
 

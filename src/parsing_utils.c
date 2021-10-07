@@ -6,11 +6,47 @@
 /*   By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/14 10:22:07 by ctaleb            #+#    #+#             */
-/*   Updated: 2021/06/14 10:33:45 by ctaleb           ###   ########lyon.fr   */
+/*   Updated: 2021/10/07 11:22:43 by ctaleb           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+int	ft_isdigit(char c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
+}
+
+static int	symbol_set(char symbol)
+{
+	if (symbol == '-')
+		return (-1);
+	else
+		return (1);
+}
+
+int	ft_atoi(const char *str)
+{
+	unsigned long long	nb;
+	int					i;
+	int					sym;
+
+	i = 0;
+	sym = 1;
+	if (str[i] == '+' || str[i] == '-')
+		sym = symbol_set(str[i++]);
+	nb = 0;
+	while (ft_isdigit(str[i]))
+	{
+		nb = (nb * 10) + (str[i] - 48);
+		i++;
+	}
+	if (str[i] && !ft_isdigit(str[i]))
+		return (-1);
+	return (nb * sym);
+}
 
 static unsigned int	ft_nbrlen(long nb)
 {
